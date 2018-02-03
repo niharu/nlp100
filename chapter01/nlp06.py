@@ -3,10 +3,8 @@
 from nlp05 import char_n_gram
 
 if __name__ == "__main__":
-    s1 = "paraparaparadise"
-    s2 = "paragraph"
-    setX = set(char_n_gram(list(s1),2))
-    setY = set(char_n_gram(list(s2),2))
+    setX = set(char_n_gram("paraparaparadise",2))
+    setY = set(char_n_gram("paragraph",2))
     print("X", setX)
     print("Y", setY)
     print("和集合", setX | setY)
